@@ -113,7 +113,7 @@ function newLevel(i) {
 function playGame() {
   var userScore = 0
   console.log("Welcome to the quiz " + username + "!");
-  var numOfLevels = 3
+  var numOfLevels = quizQuestions.length;
   for (var i = 0; i < numOfLevels; i++) {
     var levelScore = newLevel(i)
     userScore += levelScore
